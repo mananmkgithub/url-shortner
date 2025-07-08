@@ -17,6 +17,7 @@ app.use("/api",urlroutes)
 app.use((req,res,next)=>{
     return res.status(404).json({'message':'404 not found'})
 })
+
 mongoose.connect(Mongo_url).then(()=>{
      console.log('Mongodb is conneted')
      app.listen(Port,(req,res,next)=>{
