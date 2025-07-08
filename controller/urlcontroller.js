@@ -39,6 +39,7 @@ exports.shorturl = async (req, res, next) => {
         return res.status(501).json({ message: 'internal server error..' })
     }
 }
+
 exports.getclicks = async (req, res, next) => {
     try {
         const shortid = req.params.id
@@ -54,6 +55,7 @@ exports.getclicks = async (req, res, next) => {
         return res.status(501).json({ message: 'internal server error..' })
     }
 }
+
 exports.delete = async (req, res, next) => {
     try {
         const id = req.params.id
