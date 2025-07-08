@@ -1,0 +1,23 @@
+{
+  "name": "urlshorten",
+  "version": "1.0.0",
+  "description": "\"Url Shorted\"",
+  "license": "ISC",
+  "author": "\"Manan\"",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.1",
+    "shortid": "^2.2.17"
+  }
+}
