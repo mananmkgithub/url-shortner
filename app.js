@@ -7,7 +7,10 @@ const Mongo_url= process.env.MONGO_URL
 const Port=process.env.PORT || 3000
 
 app.use(express.json())
-app.use("/data",urlroutes)
+app.get('/',(req,res,next)=>{
+    return res.status(200).json({'message':'Welcome to url shortner api..'})
+})
+app.use("/api",urlroutes)
 app.use((req,res,next)=>{
     return res.status(404).json({'message':'404 not found'})
 })
